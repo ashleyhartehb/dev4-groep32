@@ -9,5 +9,5 @@ public abstract class Effect {
     protected String getDescription()
     { return description; }
 
-    protected abstract String filter();
+    protected abstract double colorValue();
 }
