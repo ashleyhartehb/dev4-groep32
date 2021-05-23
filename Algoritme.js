@@ -40,3 +40,8 @@ function quickSort(colorValues, left, right){
     }
     return colorValues;
 }
+
+//Eerste aanroep van quick sort
+var sortedArray = quickSort(colorValues, 0, colorValues.length-1);
+//Print array in console
+console.log(sortedArray);
