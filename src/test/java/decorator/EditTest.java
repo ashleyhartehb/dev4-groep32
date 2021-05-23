@@ -10,6 +10,6 @@ public class EditTest {
         effect = new DuoTone(effect);
         effect = new Desaturate(effect);
         effect = new Invert(effect);
-        System.out.println(effect.getDescription() + " " + effect.colorValue());
+        System.out.println(effect.getDescription() + effect.colorValue() + effect.colorValue());
     }
 }
