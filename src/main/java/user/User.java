@@ -1,4 +1,4 @@
-package User;
+package user;
 
 public class User {
     //initializing objects
@@ -12,14 +12,14 @@ public class User {
     private String[] interests;
 
     //constructor
-    public User(String username, String firstName, String lastName, int age, String email, int phone, String[] interests, String[] subjects){
+    public User(String username, String firstName, String lastName, int age, String email, int phone, String[] interests){
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.email = email;
         this.phone = phone;
-        this.subjects = subjects;
+        this.subjects= new String[]{"C++", "C#", "java", "SQL", "javascript", "HTML", "CSS"};
         this.interests = interests;
     }
     //setters
@@ -29,8 +29,10 @@ public class User {
     public void setAge(int age){ this.age = age; }
     public void setEmail(String email){ this.email = email; }
     public void setPhone(int phone){this.phone = phone;}
-    public void setSubjects(String[] subjects){this.subjects = subjects;}
-    public void setInterests(String[] interests){this.interests = interests;}
+    public void setInterests(String[] interests){
+        this.interests = interests;
+
+    }
 
     //getters
     public String getUsername(){ return username;}
