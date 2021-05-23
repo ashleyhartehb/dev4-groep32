@@ -26,3 +26,17 @@ function partition(colorValues, left, right){
     }
     return i;
 }
+function quickSort(colorValues, left, right){
+    var index;
+    if(colorValues.length > 1){
+        //Return index van parition
+        index = partition(colorValues, left, right);
+        if(left<index-1){
+            quickSort(colorValues, left, index-1);
+        }
+        if(index<right){
+            quickSort(colorValues, index, right);
+        }
+    }
+    return colorValues;
+}
