@@ -44,4 +44,4 @@ function quickSort(colorValues, left, right){
 //Eerste aanroep van quick sort
 var sortedArray = quickSort(colorValues, 0, colorValues.length-1);
 //Print array in console
-console.log(sortedArray);
+console.log("Sorted array: " + sortedArray);
